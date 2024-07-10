@@ -1,0 +1,111 @@
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.main {
+  width: 250px;
+  border-radius: 0px 10px 10px 10px;
+  box-shadow: 10px 10px 10px;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  text-align: right;
+  position: center;
+  height: 60px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(36, 35, 35);
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.button {
+  margin-top: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 100px;
+  height: 50px;
+  border: none;
+  font-size: 3vh;
+}
+
+.zero {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.clearAll,
+.negPos,
+.perc {
+  background-color: rgb(162, 156, 156);
+}
+
+.clearAll:hover,
+.negPos:hover,
+.perc:hover {
+  background-color: rgb(111, 105, 105);
+}
+
+.divide,
+.multiply,
+.subtract,
+.add,
+.equal {
+  background-color: rgb(226, 59, 59);
+  color: white;
+}
+
+.divide:hover,
+.multiply:hover,
+.subtract:hover,
+.add:hover,
+.equal:hover {
+  background-color: rgb(223, 98, 98);
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero,
+.dot {
+  background-color: rgb(74, 71, 71);
+  color: white;
+}
+.one:hover,
+.two:hover,
+.three.one:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover,
+.zero:hover,
+.dot:hover {
+  background-color: rgb(155, 146, 146);
+  color: white;
+}
