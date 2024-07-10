@@ -3,4 +3,3 @@ function changeNumber(n) {
   result = n;
   document.querySelector(".display").innerHTML = parseInt(n);
 }
-
