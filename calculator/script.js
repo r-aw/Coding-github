@@ -1,6 +1,11 @@
-function changeNumber(n) {
-  //document.querySelector(".display").innerHTML = "";
-  result = n;
-  document.querySelector(".display").innerHTML = parseInt(n);
+const display = document.getElementById("updateDisplay");
+
+function clearDisplay() {
+  display.value = "";
 }
 
+function appendToDisplay(input) {
+  display.value += input;
+};
+
+function calculate() { };

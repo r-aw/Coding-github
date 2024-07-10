@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Calculator</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div id="updateDisplay" class="display">C</div>
-      <div class="buttons">
-        <button onclick="changeNumber(CE)" id="btn" class="button clearAll">
-          C
-        </button>
-        <button onclick="changeNumber()" id="btn" class="button negPos">
-          &#177;
-        </button>
-        <button onclick="changeNumber()" id="btn" class="button perc">%</button>
-        <button onclick="changeNumber()" id="btn" class="button divide">
-          &#47;
-        </button>
-        <button onclick="changeNumber(7)" id="btn" class="button seven">
-          7
-        </button>
-        <button onclick="changeNumber(8)" id="btn" class="button eight">
-          8
-        </button>
-        <button onclick="changeNumber(9)" id="btn" class="button nine">
-          9
-        </button>
-        <button onclick="changeNumber()" id="btn" class="button multiply">
-          &#xd7;
-        </button>
-        <button onclick="changeNumber(4)" id="btn" class="button four">
-          4
-        </button>
-        <button onclick="changeNumber(5)" id="btn" class="button five">
-          5
-        </button>
-        <button onclick="changeNumber(6)" id="btn" class="button six">6</button>
-        <button onclick="changeNumber()" id="btn" class="button subtract">
-          -
-        </button>
-        <button onclick="changeNumber(1)" id="btn" class="button one">1</button>
-        <button onclick="changeNumber(2)" id="btn" class="button two">2</button>
-        <button onclick="changeNumber(3)" id="btn" class="button three">
-          3
-        </button>
-        <button onclick="changeNumber()" id="btn" class="button add">+</button>
-        <button onclick="changeNumber(0)" id="btn" class="button zero">
-          0
-        </button>
-        <button onclick="changeNumber()" id="btn" class="button dot">.</button>
-        <button onclick="changeNumber()" id="btn" class="button equal">
-          =
-        </button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div id="updateDisplay" class="display">C</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()" type="button" class="button clearAll">
+        C
+      </button>
+      <button onclick="negPosBtn()" type="button" class="button negPos">
+        &#177;
+      </button>
+      <button onclick="perButton()" type="button" class="button perc">%</button>
+      <button onclick="appendToDisplay()" type="button" class="button divide">
+        &#47;
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button seven">
+        7
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button eight">
+        8
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button nine">
+        9
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button multiply">
+        &#xd7;
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button four">
+        4
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button five">
+        5
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button six">6</button>
+      <button onclick="appendToDisplay()" type="button" class="button subtract">
+        -
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button one">1</button>
+      <button onclick="appendToDisplay()" type="button" class="button two">2</button>
+      <button onclick="appendToDisplay()" type="button" class="button three">
+        3
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button add">+</button>
+      <button onclick="appendToDisplay()" type="button" class="button zero">
+        0
+      </button>
+      <button onclick="appendToDisplay()" type="button" class="button dot">.</button>
+      <button onclick="calculate()" type="button" class="button equal">
+        =
+      </button>
     </div>
-    <script src="script.js">
-      function changeNumber() {
-            document.querySelector(".button").style.backgroundColor = "grey";
-          }
-    </script>
-  </body>
+  </div>
+  <script src="script.js">
+    function changeNumber() {
+      document.querySelector(".button").style.backgroundColor = "grey";
+    }
+  </script>
+</body>
+
 </html>
