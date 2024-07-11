@@ -3,3 +3,7 @@ function changeNumber(n) {
   result = n;
   document.querySelector(".display").innerHTML = parseInt(n);
 }
+
+function clearContent(clearC) {
+  document.getElementById("updateDisplay").innerHTML = "";
+}
