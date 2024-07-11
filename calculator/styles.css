@@ -21,11 +21,12 @@ body {
   text-align: right;
   position: center;
   height: 60px;
-  font-size: 40px;
+  font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(36, 35, 35);
   border: none;
   border-radius: 10px 10px 0 0;
+  overflow: hidden;
 }
 
 .buttons {
@@ -64,6 +65,12 @@ body {
   background-color: rgb(111, 105, 105);
 }
 
+.clearAll:active,
+.negPos:active,
+.perc:active {
+  background-color: rgb(221, 221, 221);
+}
+
 .divide,
 .multiply,
 .subtract,
@@ -79,6 +86,14 @@ body {
 .add:hover,
 .equal:hover {
   background-color: rgb(223, 98, 98);
+}
+
+.divide:active,
+.multiply:active,
+.subtract:active,
+.add:active,
+.equal:active {
+  background-color: rgb(255, 194, 194);
 }
 
 .one,
@@ -97,7 +112,7 @@ body {
 }
 .one:hover,
 .two:hover,
-.three.one:hover,
+.three:hover,
 .four:hover,
 .five:hover,
 .six:hover,
@@ -107,5 +122,20 @@ body {
 .zero:hover,
 .dot:hover {
   background-color: rgb(155, 146, 146);
+  color: white;
+}
+
+.one:active,
+.two:active,
+.three:active,
+.four:active,
+.five:active,
+.six:active,
+.seven:active,
+.eight:active,
+.nine:active,
+.zero:active,
+.dot:active {
+  background-color: rgb(241, 234, 234);
   color: white;
 }
