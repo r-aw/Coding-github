@@ -1,11 +1,11 @@
 function clearContent(clearC) {
-  document.getElementById("updateDisplay").innerText = "";
+  document.getElementById("updateDisplay").textContent = "";
 }
 
 function changeNumber(n) {
-  //document.querySelector(".display").innerHTML = "";
+  //document.querySelector(".display").textContent = "";
   result = n;
-  document.querySelector(".display").innerText += n;
+  document.querySelector(".display").textContent += n;
   console.log(n.value);
   if (n > 7) {
     console.log(clear);
