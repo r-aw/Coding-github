@@ -10,8 +10,14 @@ function changeNumber(n) {
 }
 
 function calculate() {
-  sum = eval();
-  console.log(sum);
+  const display = document.getElementById("updateDisplay");
+  try {
+    display.textContent = eval(
+      display.textContent.replace("×", "*").replace("÷", "/")
+    );
+  } catch (e) {
+    display.textContent = "Error";
+  }
 }
 
 function operators() {}
