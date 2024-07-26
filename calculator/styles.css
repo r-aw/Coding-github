@@ -6,9 +6,10 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 .main {
   width: 250px;
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 0 10px 10px 10px;
   box-shadow: 10px 10px 10px;
 }
 
@@ -18,13 +19,10 @@ body {
   align-items: center;
   color: white;
   padding: 10px;
-  text-align: right;
-  position: center;
   height: 60px;
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(36, 35, 35);
-  border: none;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
   white-space: nowrap;
@@ -34,14 +32,13 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   padding: 5px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .button {
   margin-top: 5px;
-  margin-left: 5px;
   cursor: pointer;
   border-radius: 100px;
   height: 50px;
@@ -59,13 +56,11 @@ body {
 .perc {
   background-color: rgb(162, 156, 156);
 }
-
 .clearAll:hover,
 .negPos:hover,
 .perc:hover {
   background-color: rgb(111, 105, 105);
 }
-
 .clearAll:active,
 .negPos:active,
 .perc:active {
@@ -80,7 +75,6 @@ body {
   background-color: rgb(226, 59, 59);
   color: white;
 }
-
 .divide:hover,
 .multiply:hover,
 .subtract:hover,
@@ -88,7 +82,6 @@ body {
 .equal:hover {
   background-color: rgb(223, 98, 98);
 }
-
 .divide:active,
 .multiply:active,
 .subtract:active,
@@ -123,9 +116,7 @@ body {
 .zero:hover,
 .dot:hover {
   background-color: rgb(155, 146, 146);
-  color: white;
 }
-
 .one:active,
 .two:active,
 .three:active,
@@ -138,5 +129,4 @@ body {
 .zero:active,
 .dot:active {
   background-color: rgb(241, 234, 234);
-  color: white;
 }
