@@ -8,78 +8,27 @@
   </head>
   <body>
     <div class="main">
-      <div id="updateDisplay" class="display"></div>
+      <div id="updateDisplay" class="display" maxlength="9" readonly></div>
       <div class="buttons">
-        <button onclick="clearContent()" id="clearC" class="button clearAll">
-          C
-        </button>
-        <button
-          onclick="changeNumber('&#177;')"
-          id="operators"
-          class="button negPos"
-        >
-          &#177;
-        </button>
-        <button onclick="changeNumber('%')" id="operators" class="button perc">
-          %
-        </button>
-        <button
-          onclick="changeNumber('&#47;')"
-          id="operators"
-          class="button divide"
-        >
-          &#47;
-        </button>
-        <button
-          onclick="changeNumber(7
-        )"
-          id="btn"
-          class="button seven"
-        >
-          7
-        </button>
-        <button onclick="changeNumber(8)" id="btn" class="button eight">
-          8
-        </button>
-        <button onclick="changeNumber(9)" id="btn" class="button nine">
-          9
-        </button>
-        <button
-          onclick="changeNumber('&#xd7;')"
-          id="operators"
-          class="button multiply"
-        >
-          &#xd7;
-        </button>
-        <button onclick="changeNumber(4)" id="btn" class="button four">
-          4
-        </button>
-        <button onclick="changeNumber(5)" id="btn" class="button five">
-          5
-        </button>
-        <button onclick="changeNumber(6)" id="btn" class="button six">6</button>
-        <button
-          onclick="changeNumber('-')"
-          id="operators"
-          class="button subtract"
-        >
-          -
-        </button>
-        <button onclick="changeNumber(1)" id="btn" class="button one">1</button>
-        <button onclick="changeNumber(2)" id="btn" class="button two">2</button>
-        <button onclick="changeNumber(3)" id="btn" class="button three">
-          3
-        </button>
-        <button onclick="changeNumber('+')" id="operators" class="button add">
-          +
-        </button>
-        <button onclick="changeNumber(0)" id="btn" class="button zero">
-          0
-        </button>
-        <button onclick="changeNumber('.')" id="operators" class="button dot">
-          .
-        </button>
-        <button onclick="calculate()" id="btn" class="button equal">=</button>
+        <button onclick="clearContent()" class="button clearAll">C</button>
+        <button onclick="changeNumber('±')" class="button negPos">±</button>
+        <button onclick="changeNumber('%')" class="button perc">%</button>
+        <button onclick="changeNumber('/')" class="button divide">/</button>
+        <button onclick="changeNumber(7)" class="button seven">7</button>
+        <button onclick="changeNumber(8)" class="button eight">8</button>
+        <button onclick="changeNumber(9)" class="button nine">9</button>
+        <button onclick="changeNumber('*')" class="button multiply">×</button>
+        <button onclick="changeNumber(4)" class="button four">4</button>
+        <button onclick="changeNumber(5)" class="button five">5</button>
+        <button onclick="changeNumber(6)" class="button six">6</button>
+        <button onclick="changeNumber('-')" class="button subtract">-</button>
+        <button onclick="changeNumber(1)" class="button one">1</button>
+        <button onclick="changeNumber(2)" class="button two">2</button>
+        <button onclick="changeNumber(3)" class="button three">3</button>
+        <button onclick="changeNumber('+')" class="button add">+</button>
+        <button onclick="changeNumber(0)" class="button zero">0</button>
+        <button onclick="changeNumber('.')" class="button dot">.</button>
+        <button onclick="calculate()" class="button equal">=</button>
       </div>
     </div>
     <script src="script.js"></script>
