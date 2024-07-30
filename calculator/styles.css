@@ -6,6 +6,7 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 .main {
   width: 250px;
   border-radius: 0px 10px 10px 10px;
@@ -111,6 +112,7 @@ body {
   background-color: rgb(74, 71, 71);
   color: white;
 }
+
 .one:hover,
 .two:hover,
 .three:hover,
