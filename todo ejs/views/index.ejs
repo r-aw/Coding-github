@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <hi>To-Do List</hi>
+    <ul>
+        <% tasks.forEach(task=> { %>
+
+            <li>
+                <%= taks %>
+            </li>
+            <% }); %>
+    </ul>
+
+    <form action="/add" method="post">
+        <input type="text" name="task" placeholder="Add a new task" required>
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+
+</html>
