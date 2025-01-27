@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/add', (req, res) => {
-    const newTask = req.body.tasks;
+    const newTask = req.body.task;
     tasks.push(newTask);
     res.redirect('/');
 });
